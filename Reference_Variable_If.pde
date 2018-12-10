@@ -32,4 +32,5 @@ squareX=squareX-1;
 //third shape
 quad(400,rectangleX,450,300,400,400,450,400);
 rectangleX=rectangleX+1;
+}
 
