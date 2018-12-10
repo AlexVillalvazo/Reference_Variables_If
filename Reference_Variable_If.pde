@@ -1,36 +1,19 @@
-// add your Reference_Variable_If code here
-float circleX;
-float squareX;
-float rectangleX;
+float circlex;
 float speed;
-//first circle
-void setup (){
+void setup(){
 size(600,600);
-circleX=0;
-squareX=10;
-rectangleX=100;
-speed=-15;
+circlex=0;
+speed=15;
 }
 void draw(){
-  
-background(255,0,0);
-ellipse(circleX,200,50,50);
-circleX=circleX+squareX;
-if(circleX>600)
+background(random(0,255));
+ellipse(circlex,200,150,150);
+circlex=circlex+speed;
+if(circlex>600)
 {
-squareX = -15;
+  speed=-30;
 }
-if(circleX<0)
+if(circlex<0)
 {
-squareX= 100;
-}
-//second shape
-rect(squareX,300,100,100);
-squareX=squareX-1;
-
-
-//third shape
-quad(400,rectangleX,450,300,400,400,450,400);
-rectangleX=rectangleX+1;
-}
-
+  speed=15;
+}}
